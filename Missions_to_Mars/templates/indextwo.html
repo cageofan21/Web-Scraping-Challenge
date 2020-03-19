@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape the Data</a></p>
+    </div>
+    <h2> <b>Latest Mars News </b></h2>
+    <h3>{{ trip.news_title }}</h3>
+    <h3>{{ trip.news_p}}</h3>
+    <br>
+    <br>
+    <br>
+    <h4> <b> Featured Mars Image </b> </h4>
+    <img src="{{ trip.featured_image_url }}" height=600 px; width=600 px >
+  </div>
+  </div>
+
+      <h5>Mars Table</h5>
+
+
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>Mars Value</th>
+          </tr>
+          <tr>
+            <th>MARS DESCRIPTION</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Equatorial Diameter:</th>
+            <td>6,792 km</td>
+          </tr>
+          <tr>
+            <th>Polar Diameter:</th>
+            <td>6,752 km</td>
+          </tr>
+          <tr>
+            <th>Mass:</th>
+            <td>6.39 * 10^23 kg (0.11 Earths)</td>
+          </tr>
+          <tr>
+            <th>Moons:</th>
+            <td>2 (Phobos & Deimos)</td>
+          </tr>
+          <tr>
+            <th>Orbit Distance:</th>
+            <td>227,943,824 km (1.38 AU)</td>
+          </tr>
+          <tr>
+            <th>Orbit Period:</th>
+            <td>687 days (1.9 years)</td>
+          </tr>
+          <tr>
+            <th>Surface Temperature:</th>
+            <td>-87 to -5 °C</td>
+          </tr>
+          <tr>
+            <th>First Record:</th>
+            <td>2nd millennium BC</td>
+          </tr>
+          <tr>
+            <th>Recorded By:</th>
+            <td>Egyptian astronomers</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <div class="row">
+			<div class="col-xs-8 col-md-8">
+        <h6><b> Four Main Hemispheres of Mars</b></h6> 
+        <img src="{{ trip.cerebrus_hem }}" height=300 px; width=300 px >
+        <img src="{{ trip.schiaparelli_image }}" height=300 px; width=300 px >
+        <br>
+        <img src="{{ trip.syrtis_image }}" height=300 px; width=300 px > <img src="{{ trip.valles_image }}" height=300 px; width=300 px>
+
+</div>
+</div>
+
+</div>
+
+</body>
+
+</html>
