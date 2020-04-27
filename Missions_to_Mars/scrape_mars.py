@@ -70,7 +70,7 @@ def scrape():
 
     mars_facts = tables[1]
 
-    mars_facts.columns = ['MARS DESCRIPTION','Mars Value']
+    mars_facts.columns = ['MARS DESCRIPTION','Mars Value','Earth']
     mars_facts.set_index('MARS DESCRIPTION', inplace=True)
 
     html_table = mars_facts.to_html()
